@@ -1,12 +1,94 @@
-body{
-    background: navajowhite; 
+:root{
+    --azul: #2e8bc0;
+    --azul-claro: #73c2fb;
+    --azul-hover-card: #eaf7fd;
+    --verde-whatsapp: #4caf50;
+    --branco: #ffffff;
+    --cinza: #f4f6f8;
+    --preto: #2c3e50;
 }
 
-section{
-    background: gray;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--cinza);
+}
+
+.cabecalho{
+    background: var(--azul);
+    color: var(--branco);
+    text-align: center;
+    padding: 20px;
+}
+
+nav ul{
+    list-style: none;
+    margin-top: 10px;
+}
+
+nav li{
+    display: inline;
+    margin: 0px 10px;
+}
+
+nav a{
+    color: var(--branco);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover{
+    opacity: 0.8;
 }
 
 .hero{
-    background: yellow;
+    background-image: url(hero.webp);
+    padding: 200px 20px;
+    background-size: cover;
+    background-position: center;
+    color: var(--branco);
+    text-align: center;
 }
 
+.hero h2{
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.hero p{
+    font-size: 20px;
+}
+
+.secao{
+    background: var(--branco);
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 40px 20px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.secao h2{
+    color: var(--azul);
+    margin-bottom: 20px;
+}
+
+.secao p{
+    line-height: 1.6;
+}
+
+.container-servicos{
+    margin-top: 20px;
+}
+
+.servico{
+    background: var(--cinza);
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 6px;
+}
