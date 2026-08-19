@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MartinsVet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <h1>MartinsVet</h1>
+        <nav>
+            <ul> <!-- ul lista não ordenada-->
+                <li><a href="index.html">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li> 
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#contato">Contatos</a></li> <!--# siginifica Âncora em css-->
+            </ul>
+        </nav> <!--Navegação-->
+    </header>
+    <section class="hero">
+        <div>
+            <h2>Cuidando da saúde e do bem-estar do seu melhor amigo</h2>
+            <p>Pet Shop completo e Clínica Veterinária com atendimento especializado. 🐶🐱
+</p>
+        </div>
+    </section>
+    <main>
+        <section class="secao" id="sobre">
+            <h2>Sobre Nós</h2>
+            <p>A MartinsVet é um Pet Shop e Clínica Veterinária que oferece atendimento humanizado, profissionais qualificados e uma estrutura moderna para cuidar da saúde, higiene e qualidade de vida dos animais de estimação. Nosso compromisso é proporcionar segurança, conforto e carinho em cada atendimento.</p>
+        </section>
+
+        <section class="secao" id="servicos">
+            <h2>Nossos Serviços</h2>
+            <div class="container-sercos">
+                <div class="servico">
+                    <h3>Consultas Veterinárias</h3>
+                    <p>Atendimento clínico, exames preventivos e acompanhamento da saúde do seu pet.</p>
+                </div>
+                <div class="servico">
+                    <h3>Banho e Tosa</h3>
+                    <p>Higiene completa, tosa especializada e cuidados com a pelagem.</p>
+                </div>
+                <div class="servico">
+                    <h3>Pet Shop</h3>
+                    <p>Rações, brinquedos, medicamentos, acessórios e produtos de higiene para cães e gatos.</p>
+                </div>
+            </div>
+        </section>
+        <section class="secao contato" id="contato">
+            <h2>Agende um Atendimento</h2>
+            <p>Preencha o formulário abaixo e nossa equipe entrará em contato.</p>
+            <form id="form-contato">
+                <input type="text" name="nome" id="nome" placeholder="nome">
+                <input type="email" name="email" id="email" placeholder="E-mail">
+                <input type="text" name="assunto" id="assunto" placeholder="assunto">
+                <textarea name="mensagem" id="mensagem" placeholder="Digite sua mensagem aqui"></textarea>
+                <button type="submit" class="btn-enviarForm">Enviar</button>
+
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 MartinsVet - Pet Shop & Clínica Veterinária</p>
+    </footer>
+</body>
+</html>
