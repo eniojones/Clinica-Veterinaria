@@ -1,4 +1,4 @@
-:root{
+:root {
     --azul: #2e8bc0;
     --azul-claro: #73c2fb;
     --azul-hover-card: #eaf7fd;
@@ -8,45 +8,43 @@
     --preto: #2c3e50;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
     background: var(--cinza);
 }
 
-.cabecalho{
+.cabecalho {
     background: var(--azul);
     color: var(--branco);
     text-align: center;
     padding: 20px;
 }
 
-nav ul{
+nav ul {
     list-style: none;
     margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
-nav li{
-    display: inline;
-    margin: 0px 10px;
-}
-
-nav a{
+nav a {
     color: var(--branco);
     text-decoration: none;
     font-weight: bold;
 }
 
-nav a:hover{
+nav a:hover {
     opacity: 0.8;
 }
 
-.hero{
+.hero {
     background-image: url(hero.webp);
     padding: 200px 20px;
     background-size: cover;
@@ -55,16 +53,16 @@ nav a:hover{
     text-align: center;
 }
 
-.hero h2{
+.hero h2 {
     font-size: 38px;
     margin-bottom: 15px;
 }
 
-.hero p{
+.hero p {
     font-size: 20px;
 }
 
-.secao{
+.secao {
     background: var(--branco);
     max-width: 900px;
     margin: 30px auto;
@@ -73,69 +71,46 @@ nav a:hover{
     text-align: center;
 }
 
-.secao h2{
+.secao h2 {
     color: var(--azul);
     margin-bottom: 20px;
 }
 
-.secao p{
+.secao p {
     line-height: 1.6;
 }
 
-.container-servicos{
+.container-servicos {
     margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
-.servico{
+.servico {
     background: var(--cinza);
-    margin-bottom: 20px;
     padding: 20px;
     border-radius: 6px;
     transition: 0.3s;
+    width: 250px;
+
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
-.servico:hover{
+.servico:hover {
     background: var(--azul-hover-card);
     transform: translateY(-5px);
 }
 
-.servico h3{
+.servico h3 {
     color: var(--azul);
 }
 
-form{
-    margin-top: 20px;
+#form-contato {
+    display: flex;
 }
 
-input, 
-textarea{
-    width: 100%;
-    margin-top: 12px;
-    padding: 12px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    font-size: 16px;
-}
-
-textarea{
-    resize: vertical;
-}
-
-.btn-enviarForm{
-    padding: 12px 25px;
-    border-radius: 5px;
-    border: none;
-    background: var(--azul);
-    color: var(--branco);
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.btn-enviarForm:hover{
-    background: var(--verde-whatsapp);
-}
-
-footer{
+footer {
     background: var(--azul);
     color: var(--branco);
     padding: 15px;

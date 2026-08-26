@@ -1,76 +1,52 @@
 # MartinsVet
 
-Página institucional estática para uma clínica veterinária e pet shop. O projeto apresenta a marca MartinsVet, seus serviços e um formulário de solicitação de atendimento.
+Página institucional estática de uma clínica veterinária e pet shop. A MartinsVet apresenta seus serviços, sua proposta de atendimento e um formulário para solicitação de contato.
 
 ## Status do projeto
 
-Em desenvolvimento ativo. A estrutura HTML está completa e os estilos CSS foram totalmente implementados com paleta de cores personalizada, componentes estilizados com efeitos interativos, e organização visual profissional. A navegação funciona com âncoras e o formulário possui estilização visual completa, aguardando apenas implementação de backend.
+Em desenvolvimento. A estrutura HTML está pronta e a página já possui identidade visual em CSS, navegação por âncoras, imagem de destaque e efeitos de interação nos cards de serviços. O formulário ainda é apenas visual.
 
 ## Funcionalidades atuais
 
-- **Cabeçalho** com nome da clínica, menu de navegação com links funcionais (âncoras) e hover effects.
-- **Seção Hero** com background image, padding responsivo e chamada principal em destaque.
-- **Seção "Sobre Nós"** com apresentação e missão da MartinsVet em card estilizado.
-- **Seção de Serviços** com 3 cards apresentando:
+- Cabeçalho com a marca MartinsVet e navegação para as seções da página.
+- Seção hero com imagem de destaque, título e chamada principal.
+- Seção "Sobre Nós" com a apresentação da clínica.
+- Seção de serviços com cards para:
 	- Consultas Veterinárias
 	- Banho e Tosa
 	- Pet Shop
-	- Efeitos hover com mudança de cor de fundo e animação de translação
-- **Seção de Contato** com formulário totalmente estilizado incluindo:
-	- Campos de entrada (nome, e-mail, assunto)
-	- Área de texto para mensagem
-	- Botão de envio com efeitos hover (muda para cor verde WhatsApp)
-- **Rodapé** com identificação, ano do projeto e estilos integrados.
-- **Paleta de cores** completa com variáveis CSS:
-	- Azul principal (#2e8bc0)
-	- Azul claro (#73c2fb)
-	- Verde WhatsApp (#4caf50)
-	- Branco, cinza e preto para contraste
-
-## Pendências conhecidas
-
-- O formulário não envia dados para um serviço ou backend (apenas estilização visual).
-- Implementação completa de responsividade para dispositivos móveis com media queries.
-- Implementar validação do formulário com JavaScript.
-- Adicionar interatividade com JavaScript (validação, envio de dados, etc.).
+- Efeito de hover nos cards de serviços, com alteração de cor e elevação.
+- Seção de contato com campos para nome, e-mail, assunto e mensagem.
+- Rodapé com identificação da MartinsVet e ano de referência.
 
 ## Tecnologias
 
-- **HTML5** para a estrutura semântica e acessível da página.
-- **CSS3** com:
-	- Variáveis personalizadas (CSS Custom Properties) para paleta de cores
-	- Flexbox para alinhamento e layout
-	- Transições suaves (0.3s) para efeitos hover
-	- Transform (translateY) para animações de movimento
-	- Border-radius para cantos arredondados
-	- Media queries para responsividade (em desenvolvimento)
-- **JavaScript** ainda não foi adicionado (previsto para validação e interatividade do formulário).
-- **Backend** ainda não foi implementado (previsto para processamento e armazenamento de dados do formulário).
+- **HTML5** para a estrutura da página.
+- **CSS3** com variáveis de cor, Flexbox, transições, transformações e bordas arredondadas.
+- **WebP** para a imagem usada na seção hero.
 
 ## Como executar
 
-Como o projeto é uma página estática, basta abrir o arquivo `index.html` no navegador. Também é possível usar uma extensão de servidor local, como o Live Server no VS Code. No estado atual, o formulário é apenas visual e não realiza o envio de mensagens.
+Por ser uma página estática, abra o arquivo `index.html` diretamente no navegador. Para desenvolvimento, também é possível usar uma extensão como o Live Server no VS Code.
+
+O formulário não envia mensagens, pois ainda não possui validação em JavaScript nem integração com um backend.
 
 ## Estrutura
 
 ```text
 .
-├── index.html  # Estrutura da página
-├── style.css   # Estilos atuais
-└── README.md   # Documentação do projeto
+├── hero.webp    # Imagem da seção hero
+├── index.html   # Estrutura da página
+├── style.css    # Estilos e identidade visual
+└── README.md    # Documentação do projeto
 ```
 
 ## Próximos passos
 
-- Otimizar a responsividade para todos os dispositivos (mobile, tablet e desktop) com media queries.
-- Implementar validação de formulário com JavaScript.
-- Conectar o formulário a um serviço de backend para envio de dados.
-- Adicionar mais conteúdo visual (galeria de fotos, depoimentos, horário de funcionamento).
-- Melhorar acessibilidade (ARIA labels, contraste de cores, navegação por teclado).
-- Adicionar imagens de alta qualidade para a seção hero e cards de serviços.
-- Implementar JavaScript para validação do formulário.
-- Criar um backend para processar os dados do formulário de contato.
-- Adicionar informações reais de contato, localização e horários de funcionamento.
-- Incluir links para redes sociais e WhatsApp.
-- Melhorar a acessibilidade (ARIA labels, contraste de cores).
-- Adicionar animações e transições para melhor experiência do usuário.
+- Ajustar a responsividade para mobile, tablet e desktop.
+- Estilizar completamente os campos e o botão do formulário.
+- Implementar validação e envio do formulário com JavaScript.
+- Conectar o formulário a um serviço de backend.
+- Adicionar informações reais de contato, localização e horários.
+- Melhorar acessibilidade, incluindo navegação por teclado, contraste e rótulos dos campos.
+- Expandir o conteúdo com galeria, depoimentos e links para redes sociais.
