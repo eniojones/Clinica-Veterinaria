@@ -108,6 +108,39 @@ nav a:hover {
 
 #form-contato {
     display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    gap: 15px;
+    margin: 20px auto 0;
+}
+
+#form-contato input,
+#form-contato textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+#form-contato textarea {
+    resize: vertical;
+}
+
+.btn-enviarForm {
+    display: inline-block;
+    padding: 10px 20px;
+    background: var(--azul);
+    color: var(--branco);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.btn-enviarForm:hover {
+    background: var(--verde-whatsapp);
 }
 
 footer {
