@@ -91,4 +91,54 @@ nav a:hover{
     margin-bottom: 20px;
     padding: 20px;
     border-radius: 6px;
+    transition: 0.3s;
+}
+
+.servico:hover{
+    background: var(--azul-hover-card);
+    transform: translateY(-5px);
+}
+
+.servico h3{
+    color: var(--azul);
+}
+
+form{
+    margin-top: 20px;
+}
+
+input, 
+textarea{
+    width: 100%;
+    margin-top: 12px;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+textarea{
+    resize: vertical;
+}
+
+.btn-enviarForm{
+    padding: 12px 25px;
+    border-radius: 5px;
+    border: none;
+    background: var(--azul);
+    color: var(--branco);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-enviarForm:hover{
+    background: var(--verde-whatsapp);
+}
+
+footer{
+    background: var(--azul);
+    color: var(--branco);
+    padding: 15px;
+    text-align: center;
+    margin-top: 30px;
 }
