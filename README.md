@@ -4,7 +4,7 @@ Página institucional estática de uma clínica veterinária e pet shop. A Marti
 
 ## Status do projeto
 
-Em desenvolvimento. A estrutura HTML está pronta e a página já possui identidade visual em CSS, navegação por âncoras, imagem de destaque e efeitos de interação nos cards de serviços. O formulário ainda é apenas visual.
+Em desenvolvimento. A estrutura HTML está pronta e a página já possui identidade visual em CSS, navegação por âncoras, imagem de destaque e efeitos de interação nos cards de serviços. O formulário também conta com layout vertical, espaçamento e estilos próprios para os campos e o botão, mas ainda não realiza o envio de mensagens.
 
 ## Funcionalidades atuais
 
@@ -16,7 +16,9 @@ Em desenvolvimento. A estrutura HTML está pronta e a página já possui identid
 	- Banho e Tosa
 	- Pet Shop
 - Efeito de hover nos cards de serviços, com alteração de cor e elevação.
-- Seção de contato com campos para nome, e-mail, assunto e mensagem.
+- Seção de contato com formulário vertical centralizado e largura máxima definida.
+- Campos de nome, e-mail, assunto e mensagem com padding, bordas, tipografia e redimensionamento configurados.
+- Botão de envio com transição e alteração para verde no hover.
 - Rodapé com identificação da MartinsVet e ano de referência.
 
 ## Tecnologias
@@ -44,7 +46,6 @@ O formulário não envia mensagens, pois ainda não possui validação em JavaSc
 ## Próximos passos
 
 - Ajustar a responsividade para mobile, tablet e desktop.
-- Estilizar completamente os campos e o botão do formulário.
 - Implementar validação e envio do formulário com JavaScript.
 - Conectar o formulário a um serviço de backend.
 - Adicionar informações reais de contato, localização e horários.
