@@ -1,11 +1,11 @@
 :root {
-    --azul: #2e8bc0;
-    --azul-claro: #73c2fb;
-    --azul-hover-card: #eaf7fd;
-    --verde-whatsapp: #4caf50;
+    --azul: #2E8BC0;
+    --azul-claro: #73C2FB;
+    --azul-hover-card: #EAF7FD;
+    --verde-whatsapp: #4CAF50;
     --branco: #ffffff;
     --cinza: #f4f6f8;
-    --preto: #2c3e50;
+    --preto: #2C3E50;
 }
 
 * {
@@ -15,10 +15,11 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, sans-serif;
     background: var(--cinza);
 }
 
+/* HEADER */
 .cabecalho {
     background: var(--azul);
     color: var(--branco);
@@ -44,24 +45,26 @@ nav a:hover {
     opacity: 0.8;
 }
 
+/* HERO */
 .hero {
-    background-image: url(hero.webp);
-    padding: 200px 20px;
+    background-image: url("martinsvet.webp");
     background-size: cover;
     background-position: center;
     color: var(--branco);
     text-align: center;
+    padding: 200px 20px;
 }
 
-.hero h2 {
-    font-size: 38px;
-    margin-bottom: 15px;
+.hero h2{
+    font-size:38px;
+    margin-bottom:15px;
 }
 
-.hero p {
-    font-size: 20px;
+.hero p{
+    font-size:20px;
 }
 
+/* SEÇÕES */
 .secao {
     background: var(--branco);
     max-width: 900px;
@@ -71,18 +74,20 @@ nav a:hover {
     text-align: center;
 }
 
-.secao h2 {
-    color: var(--azul);
-    margin-bottom: 20px;
+.secao h2{
+    color:var(--azul);
+    margin-bottom:20px;
 }
 
-.secao p {
-    line-height: 1.6;
+.secao p{
+    line-height:1.6;
 }
 
+/* SERVIÇOS */
 .container-servicos {
     margin-top: 20px;
     display: flex;
+    justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
 }
@@ -91,10 +96,8 @@ nav a:hover {
     background: var(--cinza);
     padding: 20px;
     border-radius: 6px;
-    transition: 0.3s;
     width: 250px;
-
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
 }
 
 .servico:hover {
@@ -102,24 +105,21 @@ nav a:hover {
     transform: translateY(-5px);
 }
 
-.servico h3 {
-    color: var(--azul);
-}
-
+/* FORMULÁRIO DE CONTATO */
 #form-contato {
+    max-width: 500px;
+    margin: 20px auto 0;
     display: flex;
     flex-direction: column;
-    max-width: 500px;
     gap: 15px;
-    margin: 20px auto 0;
 }
 
 #form-contato input,
 #form-contato textarea {
     padding: 10px;
-    border-radius: 5px;
     border: 1px solid #ccc;
-    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
     font-size: 16px;
 }
 
@@ -143,10 +143,115 @@ nav a:hover {
     background: var(--verde-whatsapp);
 }
 
+/* FOOTER */
 footer {
     background: var(--azul);
     color: var(--branco);
-    padding: 15px;
     text-align: center;
+    padding: 15px;
     margin-top: 30px;
+}
+
+/* ======================= */
+/* CHATBOT */
+
+/*Botão do chatboot*/
+.chat-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: var(--azul-claro);
+    color: var(--branco);
+    border: none;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+}
+
+/*Caixa do chatboot*/
+.chat-widget {
+    position: fixed;
+    bottom: 85px;
+    right: 20px;
+    width: 280px;
+    background: var(--branco);
+    border: 2px solid var(--azul);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+/*Oculta o chatboot*/
+.hidden {
+    display: none;
+}
+
+/*Cabeçalho do chatboot*/
+.chat-header {
+    background: var(--azul);
+    color: var(--branco);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*Botão X do cabeçalho do chatboot*/
+.chat-header button {
+    background: none;
+    border: none;
+    color: var(--branco);
+    cursor: pointer;
+}
+
+/*Balões de conversa do chatboot*/
+.chat-box {
+    padding: 10px;
+    height: 200px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/*Balão de conversa do usuário no chatboot*/
+.usuario {
+    align-self: flex-end;
+    background: var(--azul-claro);
+    color: var(--branco);
+    padding: 6px 10px;
+    border-radius: 6px;
+}
+
+/*Balão de conversa do bot no chatboot*/
+.bot {
+    align-self: flex-start;
+    background: var(--cinza);
+    padding: 6px 10px;
+    border-radius: 6px;
+}
+
+/*Área de envio de mensagens no chatboot*/
+.chat-input-area {
+    display: flex;
+    border: 1px solid #ddd;
+}
+/*Área que o usuário digita mensagens no chatboot*/
+.chat-input-area input {
+    flex: 1;
+    padding: 8px;
+}
+
+/*Botão de envio do chatboot*/
+.chat-input-area button {
+    background: var(--azul);
+    color: var(--branco);
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+/*Efeito ao passar o mouse no botão de envio do chatboot*/
+.chat-input-area button:hover {
+    background: var(--azul-claro);
 }
